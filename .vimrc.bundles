@@ -2,12 +2,16 @@ set nocompatible
 
 call plug#begin('~/.vim/plugged')
 
+" nerdtree
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
+" fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
+" multiple-cursor
 Plug 'terryma/vim-multiple-cursors'
 
+" aireline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
