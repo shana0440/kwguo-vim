@@ -23,6 +23,10 @@ set undoreload=10000       " Maximum number lines to save for undo on a buffer r
 " NERDTree
 map <C-e> :NERDTreeToggle<CR>
 
+" FZF
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
+map <C-P> :FZF<CR>
+
 " Indent Guides
 colorscheme bclear
 let g:indent_guides_start_level = 2
