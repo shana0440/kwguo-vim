@@ -8,6 +8,8 @@ I highly recommend spf13-vim if your device are powerful
 
 ## Installation
 
+> !! This script only works on mac & ubuntu
+
 ```bash
 bash <(curl https://bit.ly/2Ojwlzi -L)
 ```
