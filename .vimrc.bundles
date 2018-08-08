@@ -30,4 +30,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 " Signift, use to show git diff
 Plug 'mhinz/vim-signify'
 
+" Aligning text; Tab /[pattern]
+Plug 'godlygeek/tabular'
+
 call plug#end()
