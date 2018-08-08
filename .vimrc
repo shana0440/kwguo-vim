@@ -9,6 +9,8 @@ set ignorecase
 set hlsearch            " Highlight search terms
 set incsearch           " Find as you type search
 set showmatch           " Show matching brackets/parenthesis
+set list
+set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
 
 " NERDTree
 map <C-e> :NERDTreeToggle<CR>
