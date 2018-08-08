@@ -7,6 +7,9 @@ set shiftwidth=4
 set backspace=2
 set ignorecase
 
+" NERDTree
+map <C-e> :NERDTreeToggle<CR>
+
 cab W  w
 cab Wq wq
 cab wQ wq
