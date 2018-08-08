@@ -1,11 +1,14 @@
 source ~/.vimrc.bundles
 
-set tabstop=4
 syntax on
-set shiftwidth=4
 
+set tabstop=4
+set shiftwidth=4
 set backspace=2
 set ignorecase
+set hlsearch            " Highlight search terms
+set incsearch           " Find as you type search
+set showmatch           " Show matching brackets/parenthesis
 
 " NERDTree
 map <C-e> :NERDTreeToggle<CR>
