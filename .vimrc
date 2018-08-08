@@ -14,6 +14,9 @@ set showmatch " Show matching brackets/parenthesis
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
 
+" Support Shift Tab
+inoremap <S-Tab> <C-d>
+
 " Undo
 set undofile
 set undodir=~/.vim/undodir " Set undofile store path
