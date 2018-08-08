@@ -1,0 +1,9 @@
+language: bash
+
+os:
+    - osx
+    - ubuntu
+
+script:
+    - bash <(curl https://bit.ly/2Ojwlzi -L)
+
