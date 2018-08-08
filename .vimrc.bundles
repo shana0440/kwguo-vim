@@ -2,6 +2,9 @@ set nocompatible
 
 call plug#begin('~/.vim/plugged')
 
+" color
+Plug 'flazz/vim-colorschemes'
+
 " nerdtree
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
@@ -21,4 +24,8 @@ Plug 'marcweber/vim-addon-mw-utils'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 
+" indent
+Plug 'nathanaelkane/vim-indent-guides'
+
 call plug#end()
+
