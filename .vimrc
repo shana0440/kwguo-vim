@@ -12,6 +12,12 @@ set showmatch           " Show matching brackets/parenthesis
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
 
+" Undo
+set undofile
+set undodir=~/.vim/undodir
+set undolevels=1000  " Maximum number of changes that can be undone
+set undoreload=10000 " Maximum number lines to save for undo on a buffer reload
+
 " NERDTree
 map <C-e> :NERDTreeToggle<CR>
 
