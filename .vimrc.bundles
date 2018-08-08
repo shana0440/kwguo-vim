@@ -27,5 +27,7 @@ Plug 'honza/vim-snippets'
 " indent
 Plug 'nathanaelkane/vim-indent-guides'
 
-call plug#end()
+" Signift, use to show git diff
+Plug 'mhinz/vim-signify'
 
+call plug#end()
