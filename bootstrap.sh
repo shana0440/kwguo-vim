@@ -1,8 +1,12 @@
 #!/bin/bash
 
+app_name=".kwguo-vim"
+
 success() {
 	if [ "$res" -eq "0" ]; then
 		echo $1
+	else
+		exit 1
 	fi
 }
 
@@ -17,10 +21,12 @@ backup() {
 install_vim_plug() {
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	res="$?"
+	success "installed vim-plug"
 }
 
 sync_repo() {
-	repo_path=$HOME/.kwguo-vim
+	repo_path=$HOME/$app_name
 	if [ ! -e "$repo_path" ]; then
 		git clone https://github.com/shana0440/kwguo-vim.git $repo_path
 		res="$?"
@@ -33,7 +39,7 @@ sync_repo() {
 }
 
 create_symlinks() {
-	repo_path=$HOME/.kwguo-vim
+	repo_path=$HOME/$app_name
 	ln -sf "$repo_path/.vimrc"         "$HOME/.vimrc"
 	ln -sf "$repo_path/.vimrc.bundles" "$HOME/.vimrc.bundles"
 	touch "$HOME/.vimrc.local"
@@ -60,6 +66,8 @@ install_dependency() {
 	elif [ "$os" = "CentOS" ]; then
 		sudo yum update -y && sudo yum install -y the_silver_searcher git
 	fi
+	res="$?"
+	success "installed dependency"
 }
 
 setup_plug() {
@@ -67,6 +75,8 @@ setup_plug() {
 		"+PlugInstall" \
 		"+PlugClean" \
 		"+qall"
+	res="$?"
+	success "installed plugins"
 }
 
 backup
@@ -76,4 +86,4 @@ sync_repo
 create_symlinks
 setup_plug
 
-echo "Thanks for you install"
+echo "Thanks for you install $app_name"
