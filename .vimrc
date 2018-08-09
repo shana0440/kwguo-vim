@@ -29,7 +29,7 @@ map <C-e> :NERDTreeToggle<CR>
 
 " FZF
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
-map <C-P> :FZF<CR>
+map <C-p> :FZF<CR>
 
 " tab
 map <C-t> :tabedit<CR>

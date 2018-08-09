@@ -15,3 +15,11 @@ I highly recommend spf13-vim if your device are powerful
 ```bash
 bash <(curl https://bit.ly/2Ojwlzi -L)
 ```
+
+## Keyboard shortcut
+
+| Key      | Command         |
+| :------- | :-------------- |
+| Ctrl + e | :NERDTreeToggle |
+| Ctrl + t | :tabedit        |
+| Ctrl + p | :FZF            |
