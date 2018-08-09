@@ -10,6 +10,7 @@ set smartcase " Case sensitive when uc present
 set hlsearch  " Highlight search terms
 set incsearch " Find as you type search
 set showmatch " Show matching brackets/parenthesis
+set wildmenu  " Show list instead of just completing
 
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
