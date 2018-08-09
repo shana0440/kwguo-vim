@@ -8,7 +8,7 @@ success() {
 
 backup() {
 	backup_path=$HOME/.backup-vim
-	mkdir $backup_path
+	mkdir -p $backup_path
 	mv $HOME/.vimrc $backup_path
 	res="$?"
 	success "~/.vimrc already backup to ${backup_path}."
@@ -37,7 +37,7 @@ create_symlinks() {
 	ln -sf "$repo_path/.vimrc"         "$HOME/.vimrc"
 	ln -sf "$repo_path/.vimrc.bundles" "$HOME/.vimrc.bundles"
 	touch "$HOME/.vimrc.local"
-	mkdir $HOME/.vim/undodir
+	mkdir -p $HOME/.vim/undodir
 	res="$?"
 	success "setting up vim sumlinks."
 }
