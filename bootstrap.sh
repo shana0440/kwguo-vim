@@ -42,14 +42,23 @@ create_symlinks() {
 	success "setting up vim sumlinks."
 }
 
-install_dependency() {
+get_os() {
 	if [ "`uname`" = "Darwin" ]; then
-		brew update && brew install the_silver_searcher git
+		os="OSX"
 	else
-		distrib=`cat /etc/lsb-release | grep -i DISTRIB_ID | cut -d '=' -f2`
-		if [ "$distrib" = "Ubuntu" ]; then
-			sudo apt update && sudo apt install -y silversearcher-ag git
-		fi
+		os=`cat /etc/os-release | grep -i "NAME=" | cut -d '=' -f2 | head -1 | sed 's/"//g' | cut -d ' ' -f1`
+	fi
+}
+
+install_dependency() {
+	get_os
+	echo "Current OS is $os"
+	if [ "$os" = "OSX" ]; then
+		brew update && brew install the_silver_searcher git
+	elif [ "$os" = "Ubuntu" ]; then
+		sudo apt update -y && sudo apt install -y silversearcher-ag git
+	elif [ "$os" = "CentOS" ]; then
+		sudo yum update -y && sudo yum install -y the_silver_searcher git
 	fi
 }
 
