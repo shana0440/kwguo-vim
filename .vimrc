@@ -31,6 +31,9 @@ map <C-e> :NERDTreeToggle<CR>
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 map <C-P> :FZF<CR>
 
+" tab
+map <C-t> :tabedit<CR>
+
 " Indent Guides
 colorscheme bclear
 let g:indent_guides_start_level = 2
