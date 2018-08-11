@@ -33,6 +33,9 @@ map <C-p> :FZF<CR>
 " tab
 map <C-t> :tabedit<CR>
 
+" toggle sh
+map <C-d> :sh<CR>
+
 " Indent Guides
 colorscheme bclear
 let g:indent_guides_start_level = 2

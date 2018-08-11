@@ -23,3 +23,4 @@ bash <(curl https://bit.ly/2Ojwlzi -L)
 | Ctrl + e | :NERDTreeToggle |
 | Ctrl + t | :tabedit        |
 | Ctrl + p | :FZF            |
+| Ctrl + d | :sh             |
