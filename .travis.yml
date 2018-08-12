@@ -2,8 +2,7 @@ language: bash
 
 os:
     - osx
-    - ubuntu
-    - centos
+    - linux
 
 sudo: required
 
