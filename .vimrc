@@ -31,7 +31,7 @@ let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 map <C-p> :FZF<CR>
 
 " tab
-map <C-t> :tabedit<CR>
+map <C-t> :tabedit 
 
 " toggle sh
 map <C-d> :sh<CR>
