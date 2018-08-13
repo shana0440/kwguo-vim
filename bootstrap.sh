@@ -47,6 +47,7 @@ create_symlinks() {
 	ln -sf "$repo_path/.vimrc"         "$HOME/.vimrc"
 	ln -sf "$repo_path/.vimrc.bundles" "$HOME/.vimrc.bundles"
 	touch "$HOME/.vimrc.local"
+	touch "$HOME/.vimrc.bundles.local"
 	mkdir -p $HOME/.vim/undodir
 	res="$?"
 	success "setting up vim sumlinks."

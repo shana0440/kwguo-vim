@@ -33,4 +33,6 @@ Plug 'mhinz/vim-signify'
 " Aligning text; Tab /[pattern]
 Plug 'godlygeek/tabular'
 
+source ~/.vimrc.bundles.local
+
 call plug#end()
