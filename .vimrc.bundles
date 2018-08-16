@@ -36,6 +36,11 @@ Plug 'godlygeek/tabular'
 " preview command line window
 Plug 'osyo-manga/vim-over'
 
+if has('lua') == 1
+	" neocomplete.vim
+	Plug 'Shougo/neocomplete.vim'
+endif
+
 source ~/.vimrc.bundles.local
 
 call plug#end()

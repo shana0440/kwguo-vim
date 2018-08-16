@@ -12,6 +12,8 @@ I highly recommend spf13-vim if your device are powerful
 
 > !! This script only works on mac & ubuntu
 
+**Make sure you vim support lua, otherwise neocomplete.vim wan't install**
+
 ```bash
 bash <(curl https://bit.ly/2Ojwlzi -L)
 ```
