@@ -2,6 +2,8 @@ source ~/.vimrc.bundles
 
 syntax on
 
+colorscheme bclear
+
 set tabstop=4
 set shiftwidth=4
 set backspace=2
@@ -36,10 +38,19 @@ map <C-t> :tabedit
 " toggle sh
 map <C-d> :sh<CR>
 
+" signify
+let g:signify_sign_add        = '+'
+let g:signify_sign_delete     = '-'
+let g:signify_sign_change     = '~'
+let g:signify_sign_show_count = 0
+highlight SignifySignAdd    cterm=bold ctermfg=green
+highlight SignifySignDelete cterm=bold ctermfg=red
+highlight SignifySignChange cterm=bold ctermfg=yellow
+highlight SignColumn        ctermbg=none
+
 " Indent Guides
-colorscheme bclear
-let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 1
+let g:indent_guides_start_level           = 2
+let g:indent_guides_guide_size            = 1
 let g:indent_guides_enable_on_vim_startup = 1
 
 cab W  w
