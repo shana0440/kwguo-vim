@@ -41,6 +41,9 @@ map <C-t> :tabedit
 " toggle sh
 map <C-d> :sh<CR>
 
+" preview replace
+map <C-f> :OverCommandLine<CR>
+
 " signify
 let g:signify_sign_add        = '+'
 let g:signify_sign_delete     = '-'

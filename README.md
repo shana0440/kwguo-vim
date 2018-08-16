@@ -18,9 +18,10 @@ bash <(curl https://bit.ly/2Ojwlzi -L)
 
 ## Keyboard shortcut
 
-| Key      | Command         |
-| :------- | :-------------- |
-| Ctrl + e | :NERDTreeToggle |
-| Ctrl + t | :tabedit        |
-| Ctrl + p | :FZF            |
-| Ctrl + d | :sh             |
+| Key      | Command          |
+| :------- | :--------------  |
+| Ctrl + e | :NERDTreeToggle  |
+| Ctrl + t | :tabedit         |
+| Ctrl + p | :FZF             |
+| Ctrl + d | :sh              |
+| Ctrl + f | :OverCommandLine |
