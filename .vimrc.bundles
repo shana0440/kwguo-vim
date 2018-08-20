@@ -41,6 +41,8 @@ if has('lua') == 1
 	Plug 'Shougo/neocomplete.vim'
 endif
 
+Plug 'rhysd/vim-grammarous'
+
 source ~/.vimrc.bundles.local
 
 call plug#end()

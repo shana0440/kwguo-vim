@@ -66,6 +66,9 @@ install_dependency() {
 	echo "Current OS is $os"
 	if [ "$os" = "OSX" ]; then
 		brew update && brew install the_silver_searcher git
+		if [ $? -ne 0 ]; then
+			brew upgrade the_silver_searcher git
+		fi
 	elif [ "$os" = "Ubuntu" ]; then
 		sudo apt update -y && sudo apt install -y silversearcher-ag git
 	elif [ "$os" = "CentOS" ]; then
@@ -84,11 +87,20 @@ setup_plug() {
 	success "installed plugins"
 }
 
+download_languageTool() {
+	wget -O tmp.zip https://www.languagetool.org/download/LanguageTool-4.1.zip
+	unzip tmp.zip
+	mkdir -p ~/.vim/plugged/vim-grammarous
+	mv LanguageTool-4.1 ~/.vim/plugged/vim-grammarous/misc
+	rm -rf tmp.zip LanguageTool-4.1
+}
+
 backup
 install_dependency
 install_vim_plug
 sync_repo
 create_symlinks
 setup_plug
+download_languageTool
 
 echo "Thanks for you install $app_name"
