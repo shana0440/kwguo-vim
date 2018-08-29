@@ -24,10 +24,11 @@ bash <(curl https://bit.ly/2Ojwlzi -L)
 
 ## Keyboard shortcut
 
-| Key      | Command          |
-| :------- | :--------------  |
-| Ctrl + e | :NERDTreeToggle  |
-| Ctrl + t | :tabedit         |
-| Ctrl + p | :FZF             |
-| Ctrl + d | :sh              |
-| Ctrl + f | :OverCommandLine |
+| Key      | Command               |
+| :------- | :-------------------- |
+| Ctrl + e | :NERDTreeToggle       |
+| Ctrl + t | :tabedit              |
+| Ctrl + p | :FZF                  |
+| Ctrl + d | :sh                   |
+| Ctrl + f | :OverCommandLine      |
+| Ctrl + m | :NERDComToggleComment |

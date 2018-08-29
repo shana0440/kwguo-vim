@@ -41,7 +41,11 @@ if has('lua') == 1
 	Plug 'Shougo/neocomplete.vim'
 endif
 
+" grammar check
 Plug 'rhysd/vim-grammarous'
+
+" quick comment
+Plug 'scrooloose/nerdcommenter'
 
 source ~/.vimrc.bundles.local
 

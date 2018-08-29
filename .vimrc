@@ -66,6 +66,11 @@ let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
+" nerd comment
+filetype plugin on
+map <C-m> <Plug>NERDCommenterToggle
+let g:NERDSpaceDelims=1
+
 cab W  w
 cab Wq wq
 cab wQ wq
