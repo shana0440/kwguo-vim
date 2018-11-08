@@ -50,6 +50,10 @@ Plug 'rhysd/vim-grammarous'
 " quick comment
 Plug 'scrooloose/nerdcommenter'
 
+" go
+Plug 'fatih/vim-go'
+Plug 'nsf/gocode'
+
 source ~/.vimrc.bundles.local
 
 call plug#end()
