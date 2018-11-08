@@ -59,11 +59,13 @@ let g:indent_guides_start_level           = 2
 let g:indent_guides_guide_size            = 1
 let g:indent_guides_enable_on_vim_startup = 1
 
-" neocomplete.vim
-let g:acp_enableAtStartup = 0
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-let g:neocomplete#sources#syntax#min_keyword_length = 3
+" deoplete
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_smart_case = 1
+call deoplete#custom#option('omni_patterns', {
+\	'go': '[^. *\t]\.\w*',
+\})
+call deoplete#custom#source('_', 'matchers', ['matcher_full_fuzzy'])
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " nerd comment
