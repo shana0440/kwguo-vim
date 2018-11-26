@@ -52,7 +52,7 @@ Plug 'scrooloose/nerdcommenter'
 
 " go
 Plug 'fatih/vim-go'
-Plug 'nsf/gocode'
+Plug 'mdempsky/gocode'
 
 source ~/.vimrc.bundles.local
 
