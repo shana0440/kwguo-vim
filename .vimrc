@@ -60,13 +60,15 @@ let g:indent_guides_guide_size            = 1
 let g:indent_guides_enable_on_vim_startup = 1
 
 " deoplete
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_smart_case = 1
-call deoplete#custom#option('omni_patterns', {
-\	'go': '[^. *\t]\.\w*',
-\})
-call deoplete#custom#source('_', 'matchers', ['matcher_full_fuzzy'])
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+if has('nvim')
+  let g:deoplete#enable_at_startup = 1
+  let g:deoplete#enable_smart_case = 1
+  call deoplete#custom#option('omni_patterns', {
+  \	'go': '[^. *\t]\.\w*',
+  \})
+  call deoplete#custom#source('_', 'matchers', ['matcher_full_fuzzy'])
+  inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+endif
 
 " nerd comment
 filetype plugin on
